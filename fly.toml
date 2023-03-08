@@ -41,4 +41,5 @@ processes = []
   guest_path = "/code/static"
   url_prefix = "/static/"
 
-
+[deploy]
+  release_command = 'python manage.py migrate --noinput'
